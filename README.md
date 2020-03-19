@@ -20,3 +20,12 @@ FROM hkccr.ccs.tencentyun.com/yumancang/php_nginx_redis_base
 #docker tag yumancang/php_nginx_redis_base hkccr.ccs.tencentyun.com/yumancang/php_nginx_redis_base
 #docker login --username=100003270371 hkccr.ccs.tencentyun.com
 #docker push hkccr.ccs.tencentyun.com/yumancang/php_nginx_redis_base
+
+node_nginx_vue_base
+这里的基础镜像是放在腾讯云容器服务的镜像仓库里
+FROM hkccr.ccs.tencentyun.com/yumancang/node_nginx_vue_base
+业务容器启动后，要手动改下.env里面的DB配置和手动起redis守护进程
+#docker build -t yumancang/node_nginx_vue_base .
+#docker tag yumancang/node_nginx_vue_base hkccr.ccs.tencentyun.com/yumancang/node_nginx_vue_base
+#docker login --username=100003270371 hkccr.ccs.tencentyun.com
+#docker push hkccr.ccs.tencentyun.com/yumancang/node_nginx_vue_base
