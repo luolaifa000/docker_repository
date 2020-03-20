@@ -1,7 +1,7 @@
 # docker_repository
 镜像仓库
 
-
+```
 单独起一个mysql容器，不用自己构建，直接用官方的
 docker pull mysql:5.7
 docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.7
@@ -29,3 +29,4 @@ FROM hkccr.ccs.tencentyun.com/yumancang/node_nginx_vue_base
 #docker tag yumancang/node_nginx_vue_base hkccr.ccs.tencentyun.com/yumancang/node_nginx_vue_base
 #docker login --username=100003270371 hkccr.ccs.tencentyun.com
 #docker push hkccr.ccs.tencentyun.com/yumancang/node_nginx_vue_base
+```
